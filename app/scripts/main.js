@@ -1,13 +1,25 @@
+
 etsy_items.results.forEach( function (item)	{
 
-	$ ('contentpage').append('<img src="' + item.Images[0].url_fullxfull +'">');
+$('.contentpage').append('<img src="' + item.Images[0].url_170x135 + ' "/>');
 
-console.log [0];
+
+
+
+console.log(item.Images);
+
 });
 
 
 
 
+
+
+
+
+
+
+         
 
 
 
@@ -27,7 +39,7 @@ console.log [0];
 /* read array...results 
 					title
 					price
-					Image
+					Images
 					currency type
 					
 append will send results to <div mainpage>
