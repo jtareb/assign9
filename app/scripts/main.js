@@ -2,6 +2,10 @@
 etsy_items.results.forEach( function (item)	{
 
 $('.contentpage').append('<img src="' + item.Images[0].url_170x135 + ' "/>');
+$('.contenttitle').append('<p class="contenttitle">' + item.title + '</p>');
+$('.contentprice').append('<p class="contentprice">' + item.price + '</p>');
+$('contentcurr').append('<p class="contentcurr">' + item.currency_code + '</p>');
+
 
 
 
