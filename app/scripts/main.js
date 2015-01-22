@@ -1,4 +1,9 @@
+etsy_items.results.forEach( function (item)	{
 
+	$ ('contentpage').append('<img src="' + item.Images[0].url_fullxfull +'">');
+
+console.log [0];
+});
 
 
 
@@ -17,15 +22,19 @@
 //*loop through those items to find what your want and move to html*//
 
 
-etsy_items.results.forEach( function (item) {
-
-item.Images = "url 170 x 135";
 
 
+/* read array...results 
+					title
+					price
+					Image
+					currency type
+					
+append will send results to <div mainpage>
+*/
 
 
 
-$('mainpage').append('<img src="' + item.Images[0].url_fullxfull +'">');
 
 
 	
@@ -36,6 +45,5 @@ $('mainpage').append('<img src="' + item.Images[0].url_fullxfull +'">');
 
 
 
-});
 
 

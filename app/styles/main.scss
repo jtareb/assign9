@@ -4,9 +4,42 @@ body {
 
 }
 
+.hdr {
+	width: 1300px;
+	margin: auto;
 
-.title {
-  color: red;
 }
+
+.sidebar {
+	float: left;
+	width: 300px;
+	margin-left: 200px;
+	background-color: red;
+
+	
+
+
+
+
+
+
+}
+
+
+.mainpage {
+	float: right;
+	width: 600px;
+	margin-right: 200px;
+	background-color: blue;
+		
+}
+p {
+	color: white;
+
+}
+
+
+
+
 
 
