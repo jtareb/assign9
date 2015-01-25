@@ -11,7 +11,6 @@
 body {
 	background: hsla(119, 17%, 96%, 1.0);
 	width: 1426px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 
   }
@@ -20,35 +19,81 @@ body {
          width: 1000px;
          height: 100px;
          margin: 0 auto;
+         margin-top: 0;
+
 
          
       
 
   	}	
      .hdrtext  { 
+       float: left;
   	   position: relative;
        text-align: center;
        margin:  0 auto;
-       font-family: 'Open Sans', sans-serif;
+       margin-left: 50px;
        top: 33px;
        font-size: 30px;
-
-
 			
-		
+	
+  }
+
+  	 .searchbox {
+  		  position: relative;
+        text-align: center;
+  		  width: 300px;
+  		  margin-left: 100px;
+  	    top: 40px;
+
+}
+
+      .browsebox {
+        position: relative;
+        text-align: center;
+        width: 100px;
+        margin-left: 400px;
+        top: 17px;
 
 
   }
+      .navbox {
+        float: right;
+        position: relative;
+        margin: 0 auto;
 
-  	.searchbox {
-  		float: left;
-  		width: 300px;
-  		position: relative;
-  		margin-left: 200px;
-  	}		
+        
 
+
+        
+}
+         
   		
-  	
+  	   .Helplink:hover {
+        
+        position: relative;
+        margin: 0;
+
+        text-decoration: underline;
+
+}
+      .registerlink:hover {
+        
+        position: relative;
+        margin: 0;
+        text-decoration: underline;
+
+      }
+      .signinlink {
+      
+        position: relative;
+        margin: 0;
+      }
+      .cartlink {
+        margin: 0;
+      }
+
+
+
 
  .midsection {
  	width: 1000px; 
@@ -73,6 +118,7 @@ body {
 	float: left;
 	width: 750px;
 	margin: 0 auto;
+  overflow: hidden;
 
 		.contentbox {
 			overflow: hidden;
@@ -84,7 +130,7 @@ body {
       @include whiteBox;
 	  float: left;
       width: 226px;
-      padding: 15px;
+      padding: 10px;
       overflow: hidden;
       	
       	img {
