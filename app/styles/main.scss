@@ -260,7 +260,10 @@ body {
         float: left;
         font-size: 9px;
         color: hsla(0, 0%, 80%, 1.0);
-        
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
 }
 	.money {
