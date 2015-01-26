@@ -11,7 +11,7 @@
 body {
 	background: hsla(119, 17%, 96%, 1.0);
 	width: 1426px;
-    color: #333;
+    
 
   }
   .hdr {
@@ -45,6 +45,8 @@ body {
   		  width: 300px;
   		  margin-left: 100px;
   	    top: 40px;
+        
+          
 
 }
 
@@ -98,58 +100,166 @@ body {
 
  .midsection {
  	width: 1000px; 
-	margin: 0 auto;
+	margin: 50px auto;
 	
 
  }
 
-.sidebar {
-	background-color: hsla(18, 0%, 95%, 1.0);
-	float: left;
-	width: 200px;
-	margin-right: 5%;
-	min-height: 300px;
-	padding: 15px;
+ section.content {
+    overflow: hidden;
+ 
 
 
-}
+      .sidebar {
+	       float: left;
+	       width: 200px;
+	       margin-right: 5%;
+	       min-height: 300px;
+	       padding: 15px;
+         @include whiteBox;
+}              
+
+      .menu {
+        padding: 10px;
+      }
+
+      .tabletitle {
+        font-weight: bold;
+        padding: 5px;
+      }
+
+      .tablecontents {
+        padding: 5px;
+      }
 
 
-.contentpage {
-	float: left;
-	width: 750px;
-	margin: 0 auto;
-  overflow: hidden;
+      .table:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+      }
 
-		.contentbox {
-			overflow: hidden;
+      .contenttype {
+        padding: 5px;
+      }
+
+
+      .list:hover {
+        padding: 5px;
+        text-decoration: underline;
+      }
+
+      .subcategories {
+        padding: 5px;
+        margin-left: 5px;
+      }
+
+      .list1:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+      }
+
+      .list2:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+
+      }
+
+      .list3:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+
+      }
+
+      .list4:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+      }
+
+      .list5:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+      }
+
+      .list6:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+
+      }
+
+      .list7:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+      }
+
+      .list8:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+      }
+
+      .list9:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+
+      }
+
+      .list10:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+
+      }
+
+      .listclose:hover {
+        text-decoration: underline;
+        color: hsla(186, 96%, 42%, 1.0);
+        font-weight: bold;
+      }
+      
+        
+      
+  }       
+
+      
+
+    
+     .contentpage {
+	     float: right;
+       width: 750px;
+
+
+		    .contentbox {
+			     overflow: hidden;
 			 
 
 			}
-		}
+		
 	.item {
       @include whiteBox;
-	  float: left;
+	    float: left;
       width: 226px;
       padding: 10px;
       overflow: hidden;
+      margin-bottom: 25px;
       	
       	img {
-      		height: 210px;
+      		height: 214px;
 
       	}
      
      	
-     }
+     
 	
 	 h4 	{
 		font-size: 8px;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    width: 211px;
 
 	} 
 
 	.contentshop {
         float: left;
         font-size: 9px;
+        color: hsla(0, 0%, 80%, 1.0);
         
 
 }
@@ -157,10 +267,13 @@ body {
         float: right;
         font-size: 9px;
         margin-right: 15px;
+        color: hsla(92,50%,51%,1);
         
     }
+  
+  }
 
-
+}
 
 
 
