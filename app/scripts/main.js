@@ -22,7 +22,7 @@ boxcontainer = $('.contentbox');
 etsy_items.results.forEach( function (item)	{
 
 maincontent = '<div class="item">';
-maincontent += '<img src="' + item.Images[0].url_fullxfull + '"/>'; 
+maincontent += '<img src="' + item.Images[0].url_170x135 + '"/>'; 
 maincontent += '<h4>' + item.title + '</h4>';
 maincontent += '<div class= info>';
 maincontent += '<p class="contentshop">' + item.Shop.shop_name + '</p>';
