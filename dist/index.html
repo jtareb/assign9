@@ -7,29 +7,157 @@
     <title>assign9</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="styles/vendor.css">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
 
+    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 
   </head>
-  <body>
+    <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-        <li>Sass</li>
+        <div class="hdr">
+             <div class="hdrtext">Etsy</div>
+            
+                    <div class="searchbox">   
+                        <Form Name="myform" Action="" Method="GET">
+                     
+                         <Input Type="text" Name="inputbox" Value=""></Input>
+                            <Input Type="button" Name="button" Value="Search" onClick="testResults(this.form)"></Input>
+                        </Form>
 
-        <li>Bourbon & Neat</li>
+                    </div>
 
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
-    </div>
+                    <div class="browsebox">
+                        <form Name="myform2" Action="" Method="GET">
+                        <Input Type="button" Name="button" Value="Browse" onClick="testResults(this.form)"></Input>
+                        </form>
+                    </div>
+                    <div class="navbox">
+                        <text class="Helplink" onclick="help">Help</text>
+                        <text class="registerlink" onclick="Register">Register</text>
+                        <button class="signinlink" onclick="SignIn">Sign In</button>
+                        <button class="cartlink" onclick="Cart">Cart</button>
+                    </div>
+                    
+                                
 
-    <script src="scripts/vendor.js"></script>
+           
+        </div>
 
+        <div class="midsection">
+
+            <section class="content">
+               
+
+                <div class="sidebar">
+                    <span>Show Results for:</span>
+
+                        <div class="innerSideBar">
+                            <p>Item Type</p>
+                            <form action="">
+                                <fieldset>
+                                 <div class="rad1"> 
+                                    
+                                    <input type="radio" name="choice" id="radall" value="All Items" checked="checked" />
+                                    <label for="radall">All Items</label>
+                                 </div>
+
+                                  <div class="rad2">
+                                    <input type="radio" name="choice" id="radhand" value="Handmade" />
+                                    <label for="radhand">Handmaded</label>
+                                  </div>
+
+                                  <div class="rad3"> 
+                                    <input type="radio" name="choice" id="radvintage" value="Vintage" />
+                                    <label for="radvintage">Vintage</label>
+                                   </div>
+                                    
+                                   <div class="rad4">
+                                    <input type="radio" name="choice" id="radCraft" value="Craft Supplies" />
+                                    <label for="radCraft">Craft Supplies</label>
+                                    </div>
+                                    
+
+                                </fieldset> 
+                            </form>
+
+                        
+                    </div>
+                    <div class="menu">
+                    <div class="tabletitle">Categories</div>
+                        <div class="tablecontents">
+                            <div class="table"> < All Categories</div>
+                            <div class="contenttype"> 
+                            <div class="list">Vintage</div>
+                            </div>
+                                <div class="subcategories">
+
+                                    <div class="list1">Collectibles</div>
+                                    <div class="list2">Serving</div>
+                                    <div class="list3">Antique</div>
+                                    <div class="list4">Housewares</div>
+                                    <div class="list5">Paper Ephemera</div>
+                                    <div class="list6">Home Decor</div>
+                                    <div class="list7">Clothing</div>
+                                    <div class="list8">Accessories</div>
+                                    <div class="list9">Bags and PUrses</div>
+                                    <div class="list10">Jewelry</div>
+                                    <div class="listclose">+See all 16 categories</div>
+                                </div>
+                   
+                        </div>
+                    </div>
+                            
+                            
+
+                </div>        
+            </section>
+        </div>
+
+
+
+            
+
+
+
+
+
+
+       
+
+
+
+     
+
+
+
+
+
+
+
+      
+
+    <!-- build:js scripts/vendor.js -->
+    <script src="scripts/etsy.js"></script>
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
-</body>
+        <!-- endbuild -->
+  </body>
 </html>
+
+
+
+
+
+
+
