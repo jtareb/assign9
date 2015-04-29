@@ -20,34 +20,43 @@
   </head>
     <body>
 
-        <div class="hdr">
-             <div class="hdrtext">Etsy</div>
-            
-                    <div class="searchbox">   
-                        <Form Name="myform" Action="" Method="GET">
-                     
-                         <Input Type="text" Name="inputbox" Value=""></Input>
-                            <Input Type="button" Name="button" Value="Search" onClick="testResults(this.form)"></Input>
-                        </Form>
+        <header>
+            <a href="https://www.etsy.com/?ref=lgo" class="iconName">
+                <img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png">
+            </a>
 
-                    </div>
+            <form class="search">
+                <input type="text" id="input_area" placeholder="Search for items or shops">
+                <input class="button" type="submit" value="Search">
+            </form>
 
-                    <div class="browsebox">
-                        <form Name="myform2" Action="" Method="GET">
-                        <Input Type="button" Name="button" Value="Browse" onClick="testResults(this.form)"></Input>
-                        </form>
-                    </div>
-                    <div class="navbox">
-                        <text class="Helplink" onclick="help">Help</text>
-                        <text class="registerlink" onclick="Register">Register</text>
-                        <button class="signinlink" onclick="SignIn">Sign In</button>
-                        <button class="cartlink" onclick="Cart">Cart</button>
-                    </div>
-                    
-                                
+            <form class="browse">
+                <label for="select_element"></label>
+                    <select name="select_element">
+                        <option value="disabled selected">Browser</option>
+                        <option value="1">New Year's</option>
+                        <option value="2">Valentines's Day</option>
+                        <option value="3">Gift Ideas</option>
+                        <option value="line disabled"></option>
+                        <option value="1">Art</option>
+                        <option value="2">Home & Living</option>
+                        <option value="3">Mobile Accessories</option>
+                        <option value="4">Jewelry</option>
+                    </select>
+            </form>
 
-           
-        </div>
+            <a class="help" href="#">Help</a>
+
+            <a clas="register" href="#">Register</a>
+
+            <input class="signIn" type="submit" value="Sign In">
+
+            <a class="cart" href=""><img src="">Cart</a>
+
+        </header>
+
+
+
 
         <div class="midsection">
 
@@ -57,9 +66,10 @@
                 <div class="sidebar">
                     <span>Show Results for:</span>
 
-                        <div class="innerSideBar">
-                            <p>Item Type</p>
-                            <form action="">
+                        <div class="sideBar">
+                           
+                            <form action="" class="radioButtons">
+                                <span>Item Type</span><br/><br/>
                                 <fieldset>
                                  <div class="rad1"> 
                                     
@@ -75,12 +85,12 @@
                                   <div class="rad3"> 
                                     <input type="radio" name="choice" id="radvintage" value="Vintage" />
                                     <label for="radvintage">Vintage</label>
-                                   </div>
+                                  </div>
                                     
-                                   <div class="rad4">
+                                  <div class="rad4">
                                     <input type="radio" name="choice" id="radCraft" value="Craft Supplies" />
                                     <label for="radCraft">Craft Supplies</label>
-                                    </div>
+                                  </div>
                                     
 
                                 </fieldset> 
@@ -91,7 +101,7 @@
                     <div class="menu">
                     <div class="tabletitle">Categories</div>
                         <div class="tablecontents">
-                            <div class="table"> < All Categories</div>
+                            <div class="table">All Categories</div>
                             <div class="contenttype"> 
                             <div class="list">Vintage</div>
                             </div>
