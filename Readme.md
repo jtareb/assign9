@@ -3,7 +3,11 @@
 You should probably update me so people looking at your code have an idea what it is being used for :)
 
 
-
+@mixin whiteBox () {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+}
 
 
 
