@@ -19,7 +19,8 @@
 
   </head>
     <body>
-
+        
+      <div class="container">
         <header>
             <a href="https://www.etsy.com/?ref=lgo" class="iconName">
                 <img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png">
@@ -56,133 +57,79 @@
         </header>
 
 
-
-
-        <div class="midsection">
-
-            <section class="content">
-               
-
-                <div class="sidebar">
-                    <span>Show Results for:</span>
-
-                        <div class="sideBar">
-                           
-                            <form action="" class="radioButtons">
-                                <span>Item Type</span><br/><br/>
-                                <fieldset>
-                                 <div class="rad1"> 
-                                    
-                                    <input type="radio" name="choice" id="radall" value="All Items" checked="checked" />
-                                    <label for="radall">All Items</label>
-                                 </div>
-
-                                  <div class="rad2">
-                                    <input type="radio" name="choice" id="radhand" value="Handmade" />
-                                    <label for="radhand">Handmaded</label>
-                                  </div>
-
-                                  <div class="rad3"> 
-                                    <input type="radio" name="choice" id="radvintage" value="Vintage" />
-                                    <label for="radvintage">Vintage</label>
-                                  </div>
-                                    
-                                  <div class="rad4">
-                                    <input type="radio" name="choice" id="radCraft" value="Craft Supplies" />
-                                    <label for="radCraft">Craft Supplies</label>
-                                  </div>
-                                    
-
-                                </fieldset> 
-                            </form>
-
-                        
-                    </div>
-                    <div class="menu">
-                    <div class="tabletitle">Categories</div>
-                        <div class="tablecontents">
-                            <div class="table">All Categories</div>
-                            <div class="contenttype"> 
-                            <div class="list">Vintage</div>
-                            </div>
-                                <div class="subcategories">
-
-                                    <div class="list1">Collectibles</div>
-                                    <div class="list2">Serving</div>
-                                    <div class="list3">Antique</div>
-                                    <div class="list4">Housewares</div>
-                                    <div class="list5">Paper Ephemera</div>
-                                    <div class="list6">Home Decor</div>
-                                    <div class="list7">Clothing</div>
-                                    <div class="list8">Accessories</div>
-                                    <div class="list9">Bags and PUrses</div>
-                                    <div class="list10">Jewelry</div>
-                                    <div class="listclose">+See all 16 categories</div>
-                                </div>
-                   
-                        </div>
-                    </div>
-                            
-                            
-
-                </div>
-
-                      
-
-
-
-
-
-
-
-
-        
-                <div class="contentpage">
-                    
-
-                    <div class="contentbox">
-                    
-
-                    </div>
-
-                </div>
-            
-            </section>
-        </div>
-
-
-
-            
-
-
-
-
-
+        <span class="showResults">Show results for:</span>
 
        
+        <div class="sidebar">
+            
+
+                     
+            <form action="" class="radioButtons">
+                <span>Item Type</span><br/><br/>
+                <input type="radio" name="itemChoice" value="allItems">All Items<br/><br/>
+                <input type="radio" name="itemChoice" value="handmade">Handmade<br/><br/>
+                <input type="radio" name="itemChoice" value="vintage">Vintage<br/><br/>
+                <input type="radio" name="itemChoice" value="craftSupplies">Craft Supplies<br/><br/><br/>
+                <span>Categories</span>
+            </form>
+
+            <div class="categories">
+
+                <ul class = "categoriesOne">
+                  <li><a href="https://www.etsy.com/search/handmade?q=">Handmade</a></li>
+                  <li><a href="news.asp">News</a></li>
+                  <li><a href="contact.asp">Contact</a></li>
+                  <li><a href="about.asp">About</a></li>
+                  <li><a href="default.asp">Home</a></li>
+                  <li><a href="news.asp">News</a></li>
+                  <li><a href="contact.asp">Contact</a></li>
+                  <li><a href="about.asp">About</a></li>
+                </ul>
+                <ul>
+                  <li><a href="default.asp">Home</a></li>
+                  <li><a href="news.asp">News</a></li>
+                  <li><a href="contact.asp">Contact</a></li>
+                  <li><a href="about.asp">About</a></li>
+                </ul>
+                <ul>
+                  <li><a href="default.asp">Home</a></li>
+                  <li><a href="news.asp">News</a></li>
+                  <li><a href="contact.asp">Contact</a></li>
+                  <li><a href="about.asp">About</a></li>
+                </ul>
+            </div>
+
+            <form class="priceRange">
+                <span>Price Fileter</span>
+                <input type="text" id="input_area" size='6'/>
+                <span>to</span>
+                <input type="text" id="input_area" size='6'/>
+                <input class="button" type="submit" value="s">
+            </form><br/>
+                <span>Filter by Color</span>
+                <ul class="colorFilter">
+                    <li>R</li>
+                    <li>O</li>
+                    <li>Y</li>
+                    <li>G</li>
+                    <li>B</li>
+                    <li>P</li>
+                    <li>B</li>
+                    <li>W</li>
+                </ul>
+
+        </div>
+
+        <div class="main"></div>
 
 
+    </div>  
 
-     
-
-
-
-
-
-
-
-      
-
-    <!-- build:js scripts/vendor.js -->
+   
     <script src="scripts/etsy.js"></script>
-    <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <script src="scripts/main.js"></script>
+        
   </body>
 </html>
 
