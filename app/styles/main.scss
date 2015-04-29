@@ -89,7 +89,6 @@ header {
     }
 
     .signInButton {
-      //float:left;
       margin-left: 13px;
       color:HSLA(193, 53%, 54%, 1);
       background-color:white;
@@ -99,7 +98,6 @@ header {
       border-radius: 3px;
       }
     .register{
-      //float:left;
       padding-left:10px;
       color:HSLA(193, 53%, 54%, 1);
       text-decoration: none;
@@ -107,7 +105,6 @@ header {
      }
     .help{
       line-height: 34px;
-      //float:left;
       padding-left: 192px;
       color:HSLA(193, 53%, 54%, 1);
       text-decoration: none;
@@ -134,7 +131,7 @@ header {
   font-size: 14px;
   color:SLA(193, 53%, 54%, 1);
 }//sidebar close brace
-.sideBar2{
+.sideBarTwo{
   padding-top: 1499px;
   width: 210px;
   height: 218px;
@@ -142,7 +139,7 @@ header {
   margin-top: 200px;
 }//sidebar2 close brace
 
-.categoriesOne li{
+.firstCategory li{
   text-decoration: none;
 }
 
@@ -254,7 +251,7 @@ header {
   padding-top: 15px;
   padding-left: 15px;
 } 
-.filterColor{
+.colorFilter{
   float:left;
   list-style-type: none;
 li {
