@@ -1,4 +1,4 @@
-var etsyItems = {
+var etsy_items = {
 "count": 1735,
 "results": [
 {
