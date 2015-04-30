@@ -1,89 +1,19 @@
-
-
-function choose() {
-	var choice = document.getElementsByName("choice");
-
-	for (i = 0; i < choice.length; i++) {
-		currentchoice = choice[i];
-
-			if (currentchoice.checked) {
-				var selection = currentChoice.value;
-
-			}
-
-		}
-
-	}
-
-
-
-boxcontainer = $('.contentbox');
+var itemUrl;
+var itemPic;
+var itemTitle;
+var itemPrice;
+var shopName;
+var currencyCode;
+var itemContent;
 
 etsy_items.results.forEach( function (item)	{
 
-maincontent = '<div class="item">';
-maincontent += '<img src="' + item.Images[0].url_170x135 + '"/>'; 
-maincontent += '<h4>' + item.title + '</h4>';
-maincontent += '<div class= info>';
-maincontent += '<p class="contentshop">' + item.Shop.shop_name + '</p>';
-maincontent += '<p class="money">$' + item.price + item.currency_code + '</p>';
-maincontent += '</div></div>';
+	currencyCode = item.currency_code;
+	itemContent = '<div class=itemBox'>;
 
+	$('.mainContent').append(itemContent + '<a href="' + item.url + '" ><img.src="' + item.Images(0).url_170x135 + '"></a> <a href="' + item.url + '"<span class="titleSpace">' + item.title + '</span></a><a href="' + item.Shop.url + '"><span class="shopName">' + item.Shop.shop_name + '</span></a><span class="curCode">' + currencyCode + '</span><span class="priceColor">' '$' + item.price + '</span>' );
+	$('.itemBox').append('<div class="hoverPics"><img src = "../images/heart.png"></div>');
+	$('.itemBox').append('<div class="hoverPics2"><img src = "../images/hamburger.png"></div>');
 
-	
-
-
-
-
-boxcontainer.append(maincontent);
 
 });
-
-
-
-
-
-
-
-
-
-         
-
-
-
-
-
-
-
-
-
-//*view array of things neeeded*//
-
-//*loop through those items to find what your want and move to html*//
-
-
-
-
-/* read array...results 
-					title
-					price
-					Images
-					currency type
-					
-append will send results to <div mainpage>
-*/
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
