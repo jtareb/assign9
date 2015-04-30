@@ -193,28 +193,106 @@ header {
   }
 }
 
+.itemBox{
+    border-radius:3px;
+    margin: 10px;
+    float: left;
+    padding: 5px;
+    width: 224px;
+    height: 220px;
+    background-color: white;
+    font-size: 12px;
         
-                  
+    img {
+      width:214px;
+      height:170px;
+    }//img close
+    .curCode{
+      padding-top:4px;
+      padding-left:3px;
+      float:right;
+      color:HSLA(98, 50%, 52%, 1);
+  }//curCode close
+
+    .priceColor{
+      padding-top:4px;
+      float: right;
+      color:HSLA(98, 50%, 52%, 1);
+    }
+    .shopName{
+      float:left;
+      padding-top:4px;
+      color:HSLA(300, 1%, 70%, 1);
+    }
+    .shopName:hover{
+      text-decoration: underline;
+    }
     
+}
 
-  
+.itemBox:hover{
+    .hoverPics {
+      visibility: visible;
+    }
+    .hoverPics2{
+      visibility: visible;
+    }
+  } 
 
+.hoverPics{
+  float:right;
+  position: absolute;
+  margin-top: -188px;
+  margin-left: 154px;
+  width:30px;
+  height: 30px;
+  background-color:white;
+  visibility: hidden;
+    img{
+      padding: 6px;
+      width: 30px;
+      height: 30px;
+    }
+}
 
+.hoverPics2{
+  float:right;
+  position: absolute;
+  margin-top: -188px;
+  margin-left: 184px;
+  width:30px;
+  height: 30px;
+  background-color:white;
+  visibility: hidden;
+    img{
+      width: 17px;
+      height: 17px; 
+    }
+}
 
+.mainContent {
+  margin-top: 22px;
+  width:1300px;
+  background-color:HSLA(60, 17%, 95%, 1);
+}
 
+.container {
+  min-width:1300px;
+  margin:50px auto;
+}
 
+.titleSpace {
+  text-decoration: none;
+  color:HSLA(0, 2%, 41%, 1);
+  display:block;
+  overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;  
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.titleSpace:hover{
+  text-decoration: underline;
+}
 
 
 
