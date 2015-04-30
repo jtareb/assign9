@@ -121,23 +121,14 @@ header {
   float: left;
   width: 220px;
   height: 2100px;
-  background-color: white;
   margin-left: 230px;
   border-radius: 3px;
   font-size: 14px;
   color:SLA(193, 53%, 54%, 1);
-}//sidebar close brace
-.sideBarTwo{
-  padding-top: 1499px;
-  width: 220px;
-  height: 218px;
-  background-color: HSLA(60, 17%, 95%, 1);
-  margin-top: 200px;
-}//sidebar2 close brace
-
-.firstCategory li{
-  text-decoration: none;
 }
+
+
+
 
 .itemBox{
     border-radius:3px;
@@ -243,29 +234,36 @@ header {
 }
 
 .section1 {
+  background-color: white;
   font-size: small;
   padding-top: 15px;
   padding-left: 15px;
+
 
     .subCat {
       padding-left: 19px;
     }
 }
 
-.radioButtons {
-  font-size: small;
-  padding-top: 15px;
-  padding-left: 15px;
-} 
+.section2 {
+  background-color: white;
 
-.colorBox{  
-    float: left;
-    width: 15px;
-    height: 15px;
-    margin: 5px 5px 5px 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0,0,0,.2);
+
+  .radioButtons {
+    font-size: small;
+    padding-top: 15px;
+    padding-left: 15px;
+  } 
+
+  .colorBox{  
+      float: left;
+      width: 15px;
+      height: 15px;
+      margin: 5px 5px 5px 5px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(0,0,0,.2);
+  }
 }
 
 footer{
