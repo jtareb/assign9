@@ -235,7 +235,7 @@ header {
 
 .section1 {
   background-color: white;
-  font-size: small;
+  //font-size: small;
   padding-top: 15px;
   padding-left: 15px;
 
@@ -253,6 +253,7 @@ header {
     font-size: small;
     padding-top: 15px;
     padding-left: 15px;
+    border-bottom-color: hsla(205, 4%, 73%, 1.0);
   } 
 
   .colorBox{  
@@ -263,6 +264,7 @@ header {
       border-width: 1px;
       border-style: solid;
       border-color: rgba(0,0,0,.2);
+      border-bottom-color: hsla(205, 4%, 73%, 1.0);
   }
 }
 
