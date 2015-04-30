@@ -7,168 +7,202 @@
     <title>assign9</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/vendor.css">
 
-    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
 
   </head>
     <body>
+        
+      <div class="container">
+        <header>
+            <a href="https://www.etsy.com/?ref=lgo" class="iconName">
+                <img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png">
+            </a>
 
-        <div class="hdr">
-             <div class="hdrtext">Etsy</div>
-            
-                    <div class="searchbox">   
-                        <Form Name="myform" Action="" Method="GET">
-                     
-                         <Input Type="text" Name="inputbox" Value=""></Input>
-                            <Input Type="button" Name="button" Value="Search" onClick="testResults(this.form)"></Input>
-                        </Form>
+            <form class="search">
+                <input type="text" id="input_area" placeholder="Search for items or shops">
+                <input class="button" type="submit" value="Search">
+            </form>
 
-                    </div>
+            <form class="browse">
+                <label for="select_element"></label>
+                    <select name="select_element">
+                        <option value="disabled selected">Browser</option>
+                        <option value="1">New Year's</option>
+                        <option value="2">Valentines's Day</option>
+                        <option value="3">Gift Ideas</option>
+                        <option value="line disabled"></option>
+                        <option value="1">Art</option>
+                        <option value="2">Home & Living</option>
+                        <option value="3">Mobile Accessories</option>
+                        <option value="4">Jewelry</option>
+                    </select>
+            </form>
 
-                    <div class="browsebox">
-                        <form Name="myform2" Action="" Method="GET">
-                        <Input Type="button" Name="button" Value="Browse" onClick="testResults(this.form)"></Input>
-                        </form>
-                    </div>
-                    <div class="navbox">
-                        <text class="Helplink" onclick="help">Help</text>
-                        <text class="registerlink" onclick="Register">Register</text>
-                        <button class="signinlink" onclick="SignIn">Sign In</button>
-                        <button class="cartlink" onclick="Cart">Cart</button>
-                    </div>
-                    
-                                
+            <a class="help" href="#">Help</a>
 
-           
-        </div>
+            <a clas="register" href="#">Register</a>
 
-        <div class="midsection">
+            <input class="signIn" type="submit" value="Sign In">
 
-            <section class="content">
-               
+            <a class="cart" href=""><img src="">Cart</a>
 
-                <div class="sidebar">
-                    <span>Show Results for:</span>
-
-                        <div class="innerSideBar">
-                            <p>Item Type</p>
-                            <form action="">
-                                <fieldset>
-                                 <div class="rad1"> 
-                                    
-                                    <input type="radio" name="choice" id="radall" value="All Items" checked="checked" />
-                                    <label for="radall">All Items</label>
-                                 </div>
-
-                                  <div class="rad2">
-                                    <input type="radio" name="choice" id="radhand" value="Handmade" />
-                                    <label for="radhand">Handmaded</label>
-                                  </div>
-
-                                  <div class="rad3"> 
-                                    <input type="radio" name="choice" id="radvintage" value="Vintage" />
-                                    <label for="radvintage">Vintage</label>
-                                   </div>
-                                    
-                                   <div class="rad4">
-                                    <input type="radio" name="choice" id="radCraft" value="Craft Supplies" />
-                                    <label for="radCraft">Craft Supplies</label>
-                                    </div>
-                                    
-
-                                </fieldset> 
-                            </form>
-
-                        
-                    </div>
-                    <div class="menu">
-                    <div class="tabletitle">Categories</div>
-                        <div class="tablecontents">
-                            <div class="table"> < All Categories</div>
-                            <div class="contenttype"> 
-                            <div class="list">Vintage</div>
-                            </div>
-                                <div class="subcategories">
-
-                                    <div class="list1">Collectibles</div>
-                                    <div class="list2">Serving</div>
-                                    <div class="list3">Antique</div>
-                                    <div class="list4">Housewares</div>
-                                    <div class="list5">Paper Ephemera</div>
-                                    <div class="list6">Home Decor</div>
-                                    <div class="list7">Clothing</div>
-                                    <div class="list8">Accessories</div>
-                                    <div class="list9">Bags and PUrses</div>
-                                    <div class="list10">Jewelry</div>
-                                    <div class="listclose">+See all 16 categories</div>
-                                </div>
-                   
-                        </div>
-                    </div>
-                            
-                            
-
-                </div>
-
-                      
-
-
-
-
-
-
-
+        </header>
 
         
-                <div class="contentpage">
-                    
-                    <div class="contentbox"></div>
-    
-                </div>
-            
-            </section>
-        </div>
-
-
-
-            
-
-
-
-
-
 
        
+        <div class="sidebar">
 
+            <h4 class="sidebarHdr">Show results for:</h4>
 
+            <div class="section1">
+                <ul id="categories" class="filter">
+                    <li class="first">
+                        <a href="https://www.etsy.com/search?q=whiskey" class="selected">
+                        <span class="mainLinkText">All Categories</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/home-and-living?q=whiskey" class="selected">
+                        <span class="linkText">Home & Living</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/art-and-collectibles?q=whiskey" class="selected">
+                        <span class="linkText">Art & Collectibles</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/weddings?q=whiskey" class="selected">
+                        <span class="linkText">Weddings</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/clothing?q=whiskey" class="selected">
+                        <span class="linkText">Clothing</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/jewelry?q=whiskey" class="selected">
+                        <span class="linkText">Jewelry</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/accessories?q=whiskey" class="selected">
+                        <span class="linkText">Accessories</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/paper-and-party-supplies?q=whiskey" class="selected">
+                        <span class="linkText">Paper & Party Supplies</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/craft-supplies-and-tools?q=whiskey" class="selected">
+                        <span class="linkText">Craft Supplies & Tools</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/bags-and-purses?q=whiskey" class="selected">
+                        <span class="linkText">Bags & Purses</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/bath-and-beauty?q=whiskey" class="selected">
+                        <span class="linkText">Bath & Beauty</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/shoes?q=whiskey" class="selected">
+                        <span class="linkText">Shoes</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/books-movies-and-music?q=whiskey" class="selected">
+                        <span class="linkText">Books, Movies, & Music</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/electronics-and-accessories?q=whiskey" class="selected">
+                        <span class="linkText">Electronics & Accessories</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/pet-supplies?q=whiskey" class="selected">
+                        <span class="linkText">Pet Supplies</span>
+                        </a><br/><br/>
+                    </li>
+                    <li class="subCat">
+                        <a href="https://www.etsy.com/search/toys-and-games?q=whiskey" class="selected">
+                        <span class="linkText">Toys & Games</span>
+                        </a><br/><br/>
+                    </li>
+                </ul>
+            </div>
 
-     
+            <span class="refine">Refine your search</span><br/><br/>                 
+            
+            <div class="section2">                          
+                    <form action="" class="radioButtons">
+                        <span>Item Type</span><br/><br/>
+                        <input type="radio" name="itemChoice" value="allItems">All Items<br/><br/>
+                        <input type="radio" name="itemChoice" value="handmade">Handmade<br/><br/>
+                        <input type="radio" name="itemChoice" value="vintage">Vintage<br/><br/>
+                    </form>
 
+                    <form class="priceRange">
+                        <span>Price Filter</span>
+                        <input type="text" id="input_area" size='4'/>
+                        <span>to</span>
+                        <input type="text" id="input_area" size='4'/>
+                        <input class="button" type="submit" value="s">
+                    </form><br/>
 
+                    <div class="colorBar">
+                        <span>Filter by Color</span><br/><br/>
+                        <div class="colorBox" style="background-color: #FA1921"></div>
+                        <div class="colorBox" style="background-color: #FA8A19"></div>
+                        <div class="colorBox" style="background-color: #FADF14"></div>
+                        <div class="colorBox" style="background-color: #04D242"></div>
+                        <div class="colorBox" style="background-color: #32F1FB"></div>
+                        <div class="colorBox" style="background-color: #983CFB"></div>
+                        <div class="colorBox" style="background-color: #090123"></div>
+                        <div class="colorBox" style="background-color: #FFFFFF"></div>
+                    </div>
 
+                    <form action="" class="radioButtons">
+                        <span>Shop location</span><br/><br/>
+                        <input type="radio" name="locationChoice" value="Anywhere">Anywhere<br/><br/>
+                        <input type="radio" name="locationChoice" value="United-States">United States<br/><br/>
+                    </form>
+                </div>
 
+               
+        </div>
 
+       <div class="mainContent">
+           <h4>
+            <a href="https://www.etsy.com/search?q=whiskey" class="selected">
+            <span class="mainLinkText">All Categories</span>
+            </a>
+            </h4>
+          
+            
+                        
 
+           <div class="contentBox"></div>
+       </div>
 
-      
+    <footer></footer>
+    </div><!--close container-->
 
-    <!-- build:js scripts/vendor.js -->
+   
     <script src="scripts/etsy.js"></script>
-    <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <script src="scripts/main.js"></script>
+        
   </body>
 </html>
 
