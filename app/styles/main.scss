@@ -125,6 +125,11 @@ header {
   border-radius: 3px;
   font-size: 14px;
   color:SLA(193, 53%, 54%, 1);
+
+    .sidebarHdr {
+      font-size: 13px;
+      color: #666;
+    }
 }
 
 
@@ -240,8 +245,14 @@ header {
   padding-left: 15px;
 
 
+    .first {
+      color: #666;
+      cursor: default;
+      font-weight: bold;
+    }
     .subCat {
       padding-left: 19px;
+      color: #0192b5;
     }
 }
 
